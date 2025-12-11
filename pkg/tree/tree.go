@@ -20,12 +20,9 @@ func List(heading string, items []string) string {
 		last := i == len(items)-1
 		if !last {
 			msg += fmt.Sprintf("\n├─ %s", indent(item, false))
-
 		} else {
 			msg += fmt.Sprintf("\n╰─ %s", indent(item, true))
-
 		}
 	}
-
 	return msg
 }
